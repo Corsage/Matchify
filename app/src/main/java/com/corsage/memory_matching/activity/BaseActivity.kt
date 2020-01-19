@@ -14,7 +14,6 @@ import com.corsage.memory_matching.R
  * Sets up commonly used functionality.
  */
 
-
 abstract class BaseActivity : AppCompatActivity() {
     abstract val TAG: String
 

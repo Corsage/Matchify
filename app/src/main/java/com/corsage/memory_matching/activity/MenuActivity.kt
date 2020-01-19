@@ -6,7 +6,6 @@ import com.corsage.memory_matching.ext.addFragment
 import com.corsage.memory_matching.fragment.menu.MenuFragment
 import kotlinx.android.synthetic.main.activity_menu.*
 
-
 /**
  * @author [Jay Chowdhary](https://github.com/Corsage)
  * @since 1.0
