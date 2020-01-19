@@ -21,17 +21,18 @@
   <img src="https://github.com/Corsage/Matchify/blob/master/art/dark_lose.jpg" width="17%" />
 </div>
 
-## Features
+### Features
 1. NIGHT MODE BEST MODE
-2. Multiple Game Modes
+2. Lots of cool animations
+3. Multiple game modes
   * Normal - Gain a static amount of points for each match.
   * Hard - Lose points when you get a match wrong.
   * Time Trial - Points awarded depend on time passed.
-3. Automatic Grid Scaling
-4. Customizable Number of Cards
-5. Customizable Number of Matches
-6. Customizable Card View Time
-7. Customizable Time Limit
+4. Automatic grid scaling
+5. Customizable number of cards
+6. Customizable number of matches
+7. Customizable card view time
+8. Customizable time limit
 
 ### External Libraries
 1. [Blur Dialog Fragment](https://github.com/tvbarthel/BlurDialogFragment)
