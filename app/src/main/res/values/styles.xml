@@ -1,20 +1,92 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <!-- Base application theme (light theme). -->
+    <style name="Theme.Corsage.Light" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowAnimationStyle">@style/Animation.Corsage.Activity</item>
+        <item name="materialAlertDialogTheme">@style/Theme.Corsage.Light.Dialog.Alert</item>
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <!-- Base application theme (dark theme). -->
+    <style name="Theme.Corsage.Dark" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/colorDarkPrimary</item>s
+        <item name="colorPrimaryDark">@color/colorDarkPrimaryDark</item>
+        <item name="colorAccent">@color/colorDarkAccent</item>
+
+        <item name="android:windowAnimationStyle">@style/Animation.Corsage.Activity</item>
+        <item name="materialAlertDialogTheme">@style/Theme.Corsage.Dark.Dialog.Alert</item>
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Customized animations for starting/ending activities. -->
+    <style name="Animation.Corsage.Activity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <!-- Custom button style: transparent outlined button. -->
+    <style name="Widget.Corsage.OutlineButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:insetTop">2dp</item>
+        <item name="android:insetBottom">2dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="strokeColor">@android:color/white</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <!-- Custom button style: white filled button. -->
+    <style name="Widget.Corsage.FilledButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:insetTop">2dp</item>
+        <item name="android:insetBottom">2dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="backgroundTint">@android:color/white</item>
+    </style>
+
+    <!-- Custom dialog style for width formatting. -->
+    <style name="Theme.Corsage.Light.Dialog" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:textColor">@android:color/primary_text_light</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Theme.Corsage.Dark.Dialog" parent="Theme.MaterialComponents.Dialog">
+        <item name="android:textColor">@android:color/primary_text_light</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- Custom alert dialog button style. -->
+    <style name="Theme.Corsage.Light.Dialog.Alert" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.Corsage.Light.TextButton.Dialog</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.Corsage.Light.TextButton.Dialog</item>
+    </style>
+
+    <style name="Theme.Corsage.Dark.Dialog.Alert" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.Corsage.Dark.TextButton.Dialog</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.Corsage.Dark.TextButton.Dialog</item>
+    </style>
+
+    <style name="Widget.Corsage.Light.TextButton.Dialog" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Widget.Corsage.Dark.TextButton.Dialog" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
 
 </resources>
