@@ -10,7 +10,7 @@ import com.corsage.memory_matching.R
 import com.corsage.memory_matching.util.Utils
 import fr.tvbarthel.lib.blurdialogfragment.BlurDialogEngine
 
-abstract  class BaseDialogFragment() : DialogFragment() {
+abstract  class BaseDialogFragment : DialogFragment() {
     abstract val TAG: String
 
     private val settings = Application.settingsManager
