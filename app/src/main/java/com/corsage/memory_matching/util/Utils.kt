@@ -5,8 +5,6 @@ import android.animation.AnimatorListenerAdapter
 import android.animation.ObjectAnimator
 import android.animation.PropertyValuesHolder
 import android.app.Activity
-import android.app.AlarmManager
-import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.graphics.*
@@ -15,6 +13,7 @@ import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.DecelerateInterpolator
 import android.widget.Toast
+import com.corsage.memory_matching.R
 import com.corsage.memory_matching.activity.SplashActivity
 import com.facebook.drawee.view.SimpleDraweeView
 import kotlin.math.ceil
@@ -111,7 +110,7 @@ class Utils {
         }
 
         fun restartApplication(activity: Activity) {
-            Toast.makeText(activity, "Restarting application.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(activity, activity.resources.getString(R.string.app_restart), Toast.LENGTH_SHORT).show()
 
             Handler().postDelayed({
                 val intent = Intent(activity, SplashActivity::class.java)
