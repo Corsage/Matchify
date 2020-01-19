@@ -9,6 +9,7 @@
 
     <!-- Menu buttons. -->
     <string name="menu_play">Play</string>
+    <string name="menu_save">Save</string>
     <string name="menu_settings">Settings</string>
     <string name="menu_help">How to Play</string>
 
