@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:attr/actionBarSize">
+
+    <TextView
+        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:text="@string/menu_settings" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@android:color/white" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_night"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:paddingEnd="@dimen/activity_vertical_margin"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/menu_settings_text_night"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="@string/settings_night_theme"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="@string/settings_desc_night_theme"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/menu_settings_text_night" />
+
+        <Switch
+            android:id="@+id/settings_switch_night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="56dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_game_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:paddingEnd="@dimen/activity_vertical_margin"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/menu_settings_title_game_mode"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="@string/settings_game_mode"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="@string/settings_desc_game_mode"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/menu_settings_title_game_mode" />
+
+        <TextView
+            android:id="@+id/menu_settings_text_game_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/settings_grid_size"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingStart="@dimen/activity_vertical_margin"
+    android:paddingEnd="@dimen/activity_vertical_margin"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+        <TextView
+            android:id="@+id/menu_settings_title_grid_size"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="@string/settings_grid_size"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="@string/settings_desc_grid_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/menu_settings_title_grid_size" />
+
+        <TextView
+            android:id="@+id/menu_settings_text_grid_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/settings_match_count"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingStart="@dimen/activity_vertical_margin"
+    android:paddingEnd="@dimen/activity_vertical_margin"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+        <TextView
+            android:id="@+id/menu_settings_title_match_count"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="@string/settings_match_count"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="@string/settings_desc_match_count"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/menu_settings_title_match_count" />
+
+        <TextView
+            android:id="@+id/menu_settings_text_match_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/settings_view_time"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingStart="@dimen/activity_vertical_margin"
+    android:paddingEnd="@dimen/activity_vertical_margin"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+        <TextView
+            android:id="@+id/menu_settings_title_view_time"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="@string/settings_view_time"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="@string/settings_desc_view_time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/menu_settings_title_view_time" />
+
+        <TextView
+            android:id="@+id/menu_settings_text_view_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_lose_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:paddingEnd="@dimen/activity_vertical_margin"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/menu_settings_title_lose_time"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="@string/settings_lose_time"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="@string/settings_desc_lose_time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/menu_settings_title_lose_time" />
+
+        <TextView
+            android:id="@+id/menu_settings_text_lose_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
