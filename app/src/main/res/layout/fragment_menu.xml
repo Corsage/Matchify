@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/menu_img_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/path14"
+            android:tint="@android:color/white" />
+
+        <TextView
+            android:id="@+id/menu_title"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:text="@string/app_name" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/menu_btn_play"
+            style="@style/Widget.Corsage.OutlineButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/button_vertical_margin"
+            android:text="@string/menu_play" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/menu_btn_settings"
+            style="@style/Widget.Corsage.OutlineButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/button_vertical_margin"
+            android:text="@string/menu_settings" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/menu_btn_help"
+            style="@style/Widget.Corsage.OutlineButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_help" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
