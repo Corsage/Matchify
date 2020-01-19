@@ -25,6 +25,8 @@
     <string name="game_menu">Menu</string>
     <string name="game_replay">Replay</string>
 
+    <string name="game_cant_restart">Cannot restart game yet.</string>
+
     <!-- Game Over. -->
     <string name="game_over">Game Over</string>
     <string name="game_over_message">Don\'t give up and try again.\nIt will be better.</string>
@@ -57,6 +59,7 @@
 
     <string name="settings_match_bound_low">Match count must be greater than 0.</string>
     <string name="settings_match_bound_high">Match count must be lower or equal to 10.</string>
+    <string name="settings_match_grid">The grid has been updated as well.</string>
 
     <string name="settings_view_bound_low">View time must be greater than 0.</string>
     <string name="settings_view_bound_high">View time must be lower or equal to 10.</string>
