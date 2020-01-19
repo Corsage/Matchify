@@ -2,9 +2,7 @@ package com.corsage.memory_matching.local
 
 import android.os.Handler
 import android.util.Log
-import android.widget.Toast
 import com.corsage.memory_matching.Application
-import com.corsage.memory_matching.ext.length
 import com.corsage.memory_matching.model.Card
 import com.corsage.memory_matching.model.api.Product
 import com.corsage.memory_matching.model.api.resp.Products
