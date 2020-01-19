@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Memory Matching</string>
+    <string name="app_name">Matchify</string>
 
     <!-- Common. -->
     <string name="format_seconds">%1$ds</string>
